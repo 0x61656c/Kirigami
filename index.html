@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<title>Home</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+    height: 100%;
+    font-family: "Inconsolata", sans-serif;
+}
+.bgimg {
+    background-position: center;
+    background-size: cover;
+    background-image: url("prototype1.png");
+    min-height: 75%;
+}
+.menu {
+    display: none;
+}
+</style>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-black">PROGRESS</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-black">WHERE</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">Kirigami.space</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-tag" style="font-size:90px">Kirigami.space</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white">Copyright 2018 Cryptonet Technologies LLC</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT THE PROJECT</span></h5>
+    <p>I've been interested in Origami since I was a child. In 2018, I was out to dinner and folded a paper box. I cut out a slit reminiscent of a door and asked myself the following: 
+      <div class="w3-panel w3-leftbar w3-light-grey"><p><i>Why can't we scale this thing up, waterproof it, and use it for emergency relief housing in post natural-disaster scenarios?</i></p></div>
+    </p>
+
+    <p>In the interest of curiousity, I've been exploring that question since August of 2018. My research on the topic has led me to believe that this is actually a commercially viable idea, with possible applications as both a non and for-profit project.</p>
+    
+    <img src="prototype.png" style="width:100%;max-width:1000px" class="w3-margin-top">
+    <center><p><strong>Pictured above: CAD draft 4 | </strong>Source: Cryptonet Technologies LLC</p></center>
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">PROGRESS</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink">Milestones Reached</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">Future Timeline</div>
+      </a>
+    </div>
+
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+      <h5>August 2nd 2018</h5>
+      <p class="w3-text-grey">Bought dinner, came up with the idea. Spent the night brainstorming. Burned through a bunch of halfbaked ideas. Kaizen!</p><br>
+    
+      <h5>August 8th 2018</h5>
+      <p class="w3-text-grey">First draft design conceived, implemented through CAD. Began customer disovery.</p><br>
+    
+      <h5>August 17th 2018</h5>
+      <p class="w3-text-grey">Second draft design conceived, connected with network members in the Phillipenes. Began exploring for-profit applications including party tent replacements, little houses, et al.</p><br>
+    
+      <h5>August 27th 2018</h5>
+      <p class="w3-text-grey">Third draft design conceived, with significant efficiency improvements over the previous design. Began exploring opportunities for funding at Carnegie Mellon University. Continued customer discovery.</p><br>
+    
+      <h5>September 4th 2018</h5>
+      <p class="w3-text-grey">Completed draft design, with material costs and final measurements incorporated. Continued customer discovery. Made this site to legitimize progress.</p>
+    </div>
+
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+      <h5>September 2018</h5>
+      <p class="w3-text-grey">Finalize course credit. Continue customer discovery process. Iterate on designs. Drink Coffee.</p><br>
+    
+      <h5>October 2018</h5>
+      <p class="w3-text-grey">Continue customer discovery process. Finalize prototype design. Aquire necessary materials.</p><br>
+    
+      <h5>November 2018</h5>
+      <p class="w3-text-grey">Develop minimum viable product--create a physical prototype of mvp design (elements including 4 layer corrugated paper, with waterproofing materials applied as needed). Kaizen!</p><br>
+    
+      <h5>December 2018</h5>
+      <p class="w3-text-grey">Test minimum viable product, continue customer discovery. Funding secured?  </p><br>
+    
+      <h5>January 2019+</h5>
+      <p class="w3-text-grey">Decide whether or not to continue working on this project. Watch the sunrise on a grateful universe.</p>
+    </div>  
+    <img src="prototype2.png" style="width:100%;max-width:1000px;margin-top:32px;">
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">CONTACT</span></h5>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Your First Name"name="first_name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Your Last Name" name="last_name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Your Email" name="email"></p>
+      <p><textarea class="w3-input w3-padding-16 w3-border" type="text" placeholder="Your Message" name="message"></textarea></p>
+      <p><button class="w3-button w3-black" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Powered by <a href="https://consulting.cryptonettech.com" target="_blank" class="w3-hover-text-green">Cryptonet Technologies LLC</a></p>
+</footer>
+
+<!-- Add Google Maps -->
+<script>
+
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+</body>
+</html>
